@@ -10,3 +10,6 @@
 *.cer
 *.pem
 *.egg-info
+
+.coverage
+.coveralls.yml
