@@ -32,8 +32,6 @@ Exceptions
 
 .. code:: python
 
-    >>> import quaderno_sdk
-    >>> client = quaderno_sdk.Client('api_key', 'account_name')
     >>> try:
     ...     client.invoices()
     ... except quaderno_sdk.QuadernoError as e:
