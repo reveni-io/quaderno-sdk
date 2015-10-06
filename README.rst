@@ -36,7 +36,7 @@ Exceptions
     >>> client = quaderno_sdk.Client('api_key', 'account_name')
     >>> try:
     ...     client.invoices()
-    ... exception quaderno_sdk.QuadernoError as e:
+    ... except quaderno_sdk.QuadernoError as e:
     ...     print e.status_code, e.get_reatelimit()
     503 {'remaining': 0, 'reset': 10}
 
