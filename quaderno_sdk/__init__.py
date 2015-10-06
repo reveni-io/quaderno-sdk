@@ -91,7 +91,7 @@ class Client(object):
 
     def request(self, url, method, headers=None, **kwargs):
         http_headers = self.headers
-        http_headers.put(headers or {})
+        http_headers.update(headers or {})
 
         response = requests.request(
             method, url,
@@ -109,7 +109,7 @@ class Client(object):
             .format(self=self, action=action), method, **kwargs)
 
     def get(self, action, params=None, **kwargs):
-        kwargs.get((params or {}))
+        kwargs.update(params or {})
         return self._endpoint(action, 'GET', params=kwargs)
 
     def post(self, action, json=None):
