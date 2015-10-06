@@ -31,7 +31,6 @@ class QuadernoError(Exception):
         self.response = response
         self.code = response.status_code
         self.errors = None
-        self.ratelimit = None
 
         if response is not None:
             try:
