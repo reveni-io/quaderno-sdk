@@ -109,7 +109,7 @@ class Client(object):
             .format(self=self, action=action), method, **kwargs)
 
     def get(self, action, params=None, **kwargs):
-        kwargs.put((params or {}))
+        kwargs.get((params or {}))
         return self._endpoint(action, 'GET', params=kwargs)
 
     def post(self, action, json=None):
