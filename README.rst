@@ -10,7 +10,7 @@ To install quaderno-sdk, simply:
 
 .. code:: sh
 
-    $ pip install quaderno-sdk
+    $ pip install git+https://github.com/aplazame/quaderno-sdk.git
 
 Usage
 -----
