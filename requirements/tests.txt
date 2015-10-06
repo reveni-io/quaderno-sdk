@@ -1,0 +1,5 @@
+-r base.txt
+
+py==1.4.30
+pytest==2.7.3
+pytest-cov==2.1.0
