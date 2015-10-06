@@ -1,7 +1,5 @@
-Quaderno Python Sdk
-===================
-
-|Quaderno|
+Quaderno.io Python Sdk
+======================
 
 `Quaderno`_, centralizes different payment streams and automatically issues beautiful receipts. Invoicing and tax handling on autopilot.
 
@@ -46,7 +44,7 @@ Exceptions
 Documentation
 -------------
 
-Documentation is available at `https://quaderno.io/docs/`_.
+Documentation is available at `https://quaderno.io/docs/`_
 
 .. _Quaderno: https://quaderno.io
 .. _https://quaderno.io/docs/: https://quaderno.io/docs/
