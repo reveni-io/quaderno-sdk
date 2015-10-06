@@ -43,7 +43,7 @@ class QuadernoError(Exception):
                     self.message = 'Validation Error'
                     self.errors = error['errors']
                 else:
-                    self.message = error.get('error')
+                    self.message = error.get('error', 'HTTP Error')
 
     def get_reatelimit(self):
         """
