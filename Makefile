@@ -13,5 +13,5 @@ test:
 	@$(PYTEST) --verbose $(tests)
 
 coverage:
-	@$(PYTEST) --verbose --cov-report term --cov=aplazame_sdk $(tests)
+	@$(PYTEST) --verbose --cov-report term --cov=quaderno_sdk $(tests)
 	@coveralls
