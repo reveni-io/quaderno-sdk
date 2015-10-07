@@ -78,8 +78,6 @@ class Client(object):
         self.token = token
         self.version = version
         self.ctype = ctype
-        self.ratelimit = None
-        self.pagination = None
         self.host = "https://{}.quadernoapp.com".format(account_name)
 
     @property
@@ -100,6 +98,7 @@ class Client(object):
 
         if not (200 <= response.status_code < 300):
             raise QuadernoError(response)
+
         return response
 
     def _endpoint(self, action, method, **kwargs):
