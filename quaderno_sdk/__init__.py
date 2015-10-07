@@ -15,7 +15,7 @@
 #  0. You just DO WHAT THE FUCK YOU WANT TO.
 
 
-__version__ = '0.0.0'
+__version__ = '0.0.1'
 
 import json
 import requests
