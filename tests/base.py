@@ -8,7 +8,7 @@ class SdkBaseTestCase(unittest.TestCase):
 
     def setUp(self):
         self.client = quaderno_sdk.Client(
-            token=self.token, account_name=self.account_name)
+            token=self.token, api_host=self.api_host)
 
     def tearDown(self):
         pass

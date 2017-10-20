@@ -18,7 +18,7 @@ Usage
 .. code:: python
 
     >>> import quaderno_sdk
-    >>> client = quaderno_sdk.Client('api_key', 'account_name')
+    >>> client = quaderno_sdk.Client('api_key', 'api_host')
     >>> r = client.invoices()
     >>> r.json()
     [
