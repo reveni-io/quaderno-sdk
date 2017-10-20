@@ -7,7 +7,7 @@ init.dist:
 	@pip install -r requirements/dist.txt
 
 init: init.test init.dist
-	@pip install -r requirements/local.txt
+	@pip install -r requirements/base.txt
 
 test:
 	@$(PYTEST) --verbose $(tests)

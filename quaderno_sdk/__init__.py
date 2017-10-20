@@ -15,7 +15,7 @@
 #  0. You just DO WHAT THE FUCK YOU WANT TO.
 
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 import json
 import requests
@@ -73,18 +73,23 @@ class Client(object):
 
     user_agent = 'QuadernoSdk/api-rest-sdk:' + __version__
 
-    def __init__(self, token, account_name, version='1', ctype='json'):
+    def __init__(self, token, api_host, version=None, ctype='json'):
 
         self.token = token
-        self.version = version
         self.ctype = ctype
-        self.host = "https://{}.quadernoapp.com".format(account_name)
+        self.version = version
+        self.host = api_host
 
     @property
     def headers(self):
-        return {
+        headers = {
             'User-Agent': self.user_agent
         }
+        if self.version:
+            headers.update({
+                'Accept': 'application/json',
+                'api_version': self.version})
+        return headers
 
     def request(self, url, method, headers=None, **kwargs):
         http_headers = self.headers
@@ -103,7 +108,7 @@ class Client(object):
 
     def _endpoint(self, action, method, **kwargs):
         return self.request(
-            "{self.host}/api/v{self.version}/{action}.{self.ctype}"
+            "{self.host}/api/{action}.{self.ctype}"
             .format(self=self, action=action), method, **kwargs)
 
     def get(self, action, params=None, **kwargs):
