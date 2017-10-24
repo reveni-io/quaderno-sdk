@@ -15,7 +15,7 @@
 #  0. You just DO WHAT THE FUCK YOU WANT TO.
 
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 import json
 import requests
@@ -87,8 +87,8 @@ class Client(object):
         }
         if self.version:
             headers.update({
-                'Accept': 'application/json',
-                'api_version': self.version})
+                'Accept': 'application/json; api_version={}'.format(
+                    self.version)})
         return headers
 
     def request(self, url, method, headers=None, **kwargs):
