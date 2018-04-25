@@ -61,7 +61,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     url='https://github.com/aplazame/quaderno-sdk',
-    license='Apache 2.0',
+    license='BSD 3-clause "New" or "Revised License"',
     install_requires=['requests>=1.1.0'],
     dependency_links=[
         'https://github.com/kennethreitz/requests'],
@@ -69,7 +69,7 @@ setup(
         'Programming Language :: Python',
         'Natural Language :: English',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
