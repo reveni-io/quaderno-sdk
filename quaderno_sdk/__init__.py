@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 
 import json
 import requests
@@ -301,4 +301,4 @@ class Client(object):
         """
         Calculate the taxes applied for a given customer data
         """
-        return self.get('taxes/calculate', params=None, **kwargs)
+        return self.get('tax_rates/calculate', params=None, **kwargs)

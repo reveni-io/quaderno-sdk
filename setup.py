@@ -54,15 +54,15 @@ setup(
     version=get_version('quaderno_sdk'),
     description='Python SDK for Quaderno REST API',
     long_description=get_long_description(),
-    author='calvin',
-    author_email='dani@aplazame.com',
+    author='aplazame',
+    author_email='dev@aplazame.com',
     packages=['quaderno_sdk'],
     package_data={'': ['LICENSE']},
     include_package_data=True,
     zip_safe=False,
     url='https://github.com/aplazame/quaderno-sdk',
     license='BSD 3-clause "New" or "Revised License"',
-    install_requires=['requests>=1.1.0'],
+    install_requires=['requests>=2.20.0'],
     dependency_links=[
         'https://github.com/kennethreitz/requests'],
     classifiers=[
@@ -72,11 +72,11 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4'
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9'
     ],
     keywords=['python', 'quaderno', 'api', 'rest', 'sdk']
 )
